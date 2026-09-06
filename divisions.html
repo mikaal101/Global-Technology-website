@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Divisions | Global Technology Oil Field and Gas Trading LLC</title>
+<meta name="description" content="Telecommunication, Power, Hazardous Area Products, and Commercial divisions — comprehensive solutions from Global Technology.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --charcoal:#1A1A1A;--charcoal-soft:#222325;--charcoal-elev:#28292c;
+    --teal:#14967D;--blue:#1D6FA5;--off-white:#F7F7F7;--white:#FFFFFF;
+    --line:rgba(255,255,255,.12);--placeholder:#DCE3E7;--placeholder-line:#B7C2C8;
+    --muted-dark:rgba(255,255,255,.68);--muted-light:rgba(26,26,26,.62);
+    --radius-lg:18px;--radius-md:14px;--radius-sm:9px;
+    --shadow-nav:0 12px 40px rgba(0,0,0,.28);--shadow-card:0 18px 45px rgba(20,25,30,.10);--shadow-card-hover:0 26px 60px rgba(20,25,30,.16);
+    --ease:cubic-bezier(.16,.8,.36,1);--gradient:linear-gradient(135deg,var(--teal) 0%,var(--blue) 100%);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;font-family:'Montserrat',sans-serif;background:var(--off-white);color:var(--charcoal);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  img{max-width:100%;display:block;}
+  a{text-decoration:none;color:inherit;}
+  ul{list-style:none;margin:0;padding:0;}
+  button{font-family:inherit;cursor:pointer;}
+  h1,h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.01em;text-transform:uppercase;}
+  :focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:4px;}
+  @media (prefers-reduced-motion: reduce){*{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important;}}
+
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:14px;}
+  .eyebrow::before{content:"";width:22px;height:2px;background:var(--gradient);display:inline-block;border-radius:2px;}
+  .eyebrow.on-dark{color:#5FE3C5;}
+  .section-head{max-width:640px;margin-bottom:44px;}
+  .section-head h2{font-size:clamp(26px,3.6vw,38px);line-height:1.15;}
+  .section-head p{font-size:15.5px;line-height:1.7;color:var(--muted-light);margin-top:14px;}
+  .section-head.on-dark h2{color:var(--white);}
+  .section-head.on-dark p{color:var(--muted-dark);}
+  .wrap{max-width:1220px;margin:0 auto;padding:0 28px;}
+
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:14px;font-size:14px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;transition:transform .35s var(--ease), box-shadow .35s var(--ease);border:1px solid transparent;white-space:nowrap;}
+  .btn-primary{background:var(--gradient);color:#fff;box-shadow:0 14px 30px rgba(20,150,125,.35);}
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 40px rgba(20,150,125,.45);}
+  .btn-light{background:#fff;color:var(--charcoal);box-shadow:0 14px 30px rgba(0,0,0,.18);}
+  .btn-light:hover{transform:translateY(-3px);box-shadow:0 20px 40px rgba(0,0,0,.22);}
+
+  .link-arrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--charcoal);}
+  .link-arrow.on-dark{color:#fff;}
+  .link-arrow svg{transition:transform .3s var(--ease);}
+  .link-arrow:hover svg{transform:translateX(5px);}
+
+  .img-placeholder{position:relative;background-color:var(--placeholder);background-repeat:no-repeat;background-position:center;background-size:cover;border:1.5px dashed var(--placeholder-line);display:flex;align-items:center;justify-content:center;overflow:hidden;}
+  .img-placeholder[class*="logo"]{background-color:#FFFFFF;background-size:contain;background-origin:content-box;}
+  .img-placeholder::after{content:attr(data-label);position:absolute;bottom:10px;left:10px;right:10px;font-size:10.5px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;color:#4A5459;background:var(--placeholder);padding:6px 10px;border-radius:8px;line-height:1.4;text-align:center;pointer-events:none;}
+  .img-placeholder.img-loaded::after{display:none;}
+  .img-placeholder.img-loaded{border:none;}
+  .img-placeholder[class*="logo"].img-loaded{border:1px solid #E5E9EB;box-shadow:0 3px 12px rgba(20,25,30,.08);}
+
+
+  .logo-slot{flex-shrink:0;width:150px;height:78px;border-radius:10px;padding:8px 12px;transition:border-color .3s, transform .3s;}
+  .logo-slot:hover{transform:translateY(-3px);border-color:var(--teal);}
+  .logo-slot--dark{border-color:rgba(255,255,255,.35);}
+  .logo-slot--dark:hover{border-color:#4FD9BC;}
+  .logo-grid{display:flex;flex-wrap:wrap;gap:14px;}
+
+  /* ============ NAVBAR (shared) ============ */
+  .nav-wrap{position:fixed;top:18px;left:0;right:0;z-index:1000;padding:0 20px;}
+  .navbar{position:relative;width:100%;max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 14px 12px 22px;border-radius:24px;background:rgba(255,255,255,.09);backdrop-filter:blur(22px) saturate(180%);-webkit-backdrop-filter:blur(22px) saturate(180%);border:1px solid rgba(255,255,255,.20);box-shadow:var(--shadow-nav), inset 0 1px 0 rgba(255,255,255,.18);transition:padding .4s var(--ease), background .4s var(--ease), border-color .4s var(--ease);}
+  .navbar.scrolled{padding:8px 10px 8px 20px;background:rgba(18,18,18,.58);border-color:rgba(255,255,255,.14);}
+  .nav-logo{display:flex;align-items:center;gap:10px;}
+  .logo-mark{width:34px;height:34px;border-radius:10px;background-image:url('resources/images/gtlogo.png');background-repeat:no-repeat;background-position:center;background-size:contain;background-color:transparent;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .logo-text{font-size:13px;font-weight:800;letter-spacing:.05em;color:#fff;line-height:1.15;text-transform:uppercase;}
+  .logo-text span{display:block;font-size:9px;font-weight:600;letter-spacing:.14em;color:rgba(255,255,255,.55);}
+  .nav-links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:6px;}
+  .nav-right{display:flex;align-items:center;gap:10px;}
+  .nav-link{position:relative;padding:10px 16px;font-size:13.5px;font-weight:600;color:rgba(255,255,255,.82);border-radius:11px;transition:background .3s var(--ease), color .3s var(--ease);background:none;border:none;display:inline-flex;align-items:center;gap:6px;}
+  .nav-link:hover{color:#fff;background:rgba(255,255,255,.10);}
+  .nav-link.active{color:#fff;background:rgba(255,255,255,.15);font-weight:700;}
+  .nav-link.active::after{content:"";position:absolute;bottom:3px;left:50%;transform:translateX(-50%);width:16px;height:3px;border-radius:2px;background:var(--gradient);}
+  .nav-link svg{width:11px;height:11px;transition:transform .3s var(--ease);}
+  .nav-dropdown{position:relative;}
+  .nav-dropdown:hover .dropdown-panel, .nav-dropdown:focus-within .dropdown-panel{opacity:1;visibility:visible;transform:translate(-50%,0);}
+  .nav-dropdown:hover .nav-link svg{transform:rotate(180deg);}
+  .dropdown-panel{position:absolute;top:calc(100% + 14px);left:50%;transform:translate(-50%,8px);width:280px;background:rgba(26,26,26,.92);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-md);padding:10px;box-shadow:var(--shadow-nav);opacity:0;visibility:hidden;transition:opacity .3s var(--ease), transform .3s var(--ease), visibility .3s;}
+  .dropdown-panel a{display:flex;align-items:center;gap:10px;padding:11px 14px;border-radius:12px;font-size:13px;font-weight:600;color:rgba(255,255,255,.85);transition:background .25s, color .25s, padding-left .25s;}
+  .dropdown-panel a:hover{background:rgba(255,255,255,.09);color:#fff;padding-left:18px;}
+  .dropdown-panel a::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gradient);flex-shrink:0;}
+  .nav-cta{position:relative;flex:0 0 auto;padding:11px 22px;border-radius:14px;background:var(--gradient);color:#fff;font-size:13px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;box-shadow:0 10px 24px rgba(20,150,125,.35);transition:transform .3s var(--ease), box-shadow .3s var(--ease);}
+  .nav-cta:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 16px 32px rgba(20,150,125,.45);}
+  .nav-cta.active::after{content:"";position:absolute;bottom:6px;left:50%;transform:translateX(-50%);width:14px;height:3px;border-radius:2px;background:#fff;opacity:.85;}
+  .nav-toggle{display:none;width:38px;height:38px;border-radius:12px;background:rgba(255,255,255,.10);border:none;flex-direction:column;align-items:center;justify-content:center;gap:4px;flex-shrink:0;}
+  .nav-toggle span{width:16px;height:2px;background:#fff;border-radius:2px;transition:transform .3s var(--ease), opacity .3s var(--ease);}
+  .nav-toggle.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+  .nav-toggle.open span:nth-child(2){opacity:0;}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+  .mobile-panel{max-width:1180px;margin:10px auto 0;display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .45s var(--ease), opacity .3s var(--ease);}
+  .mobile-panel.open{grid-template-rows:1fr;opacity:1;}
+  .mobile-panel-inner{overflow:hidden;min-height:0;background:rgba(18,18,20,.78);backdrop-filter:blur(22px) saturate(160%);-webkit-backdrop-filter:blur(22px) saturate(160%);border:1px solid rgba(255,255,255,.16);border-radius:var(--radius-md);box-shadow:var(--shadow-nav);padding:10px;}
+  .mobile-link{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;font-size:14px;font-weight:700;color:#fff;border-radius:12px;text-transform:uppercase;letter-spacing:.03em;}
+  .mobile-link:hover{background:rgba(255,255,255,.08);}
+  .mobile-dropdown-panel{max-height:0;overflow:hidden;transition:max-height .4s var(--ease);padding-left:10px;}
+  .mobile-dropdown-panel.open{max-height:260px;}
+  .mobile-dropdown-panel a{display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13px;font-weight:600;color:rgba(255,255,255,.75);}
+  .mobile-dropdown-panel a::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gradient);}
+  .mobile-cta{display:block;text-align:center;margin-top:6px;padding:14px;border-radius:12px;background:var(--gradient);color:#fff;font-weight:800;text-transform:uppercase;font-size:13px;letter-spacing:.04em;}
+  @media (max-width:920px){
+    .nav-links, .nav-cta{display:none;}
+    .nav-toggle{display:flex;}
+    .navbar{padding:10px 10px 10px 20px;}
+    .nav-right{gap:0;}
+  }
+
+  /* ============ REVEAL ============ */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal.in-view{opacity:1;transform:translateY(0);}
+  .reveal-stagger > *{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease), transform .7s var(--ease);}
+  .reveal-stagger.in-view > *{opacity:1;transform:translateY(0);}
+  .reveal-stagger.in-view > *:nth-child(1){transition-delay:.02s;}
+  .reveal-stagger.in-view > *:nth-child(2){transition-delay:.1s;}
+  .reveal-stagger.in-view > *:nth-child(3){transition-delay:.18s;}
+  .reveal-stagger.in-view > *:nth-child(4){transition-delay:.26s;}
+
+  /* ============ DIVISIONS HERO ============ */
+  .div-hero{position:relative;padding:190px 0 70px;background:var(--charcoal);overflow:hidden;}
+  .div-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 800px 560px at 15% 0%, rgba(20,150,125,.20), transparent 62%),radial-gradient(ellipse 700px 520px at 95% 100%, rgba(29,111,165,.16), transparent 60%);}
+  .hero-logo-watermark{
+    position:absolute;
+    top:0;bottom:0;
+    left:40%;
+    width:70%;
+    background-image:url('resources/images/gtlogohero.svg');
+    background-repeat:no-repeat;
+    background-position:left 10%;
+    background-size:140% auto;
+    opacity:.15;
+    pointer-events:none;
+    z-index:1;
+  }
+  .div-hero .wrap{position:relative;z-index:2;}
+  .div-hero h1{font-size:clamp(36px,5.6vw,58px);line-height:1.06;color:#fff;text-transform:uppercase;max-width:720px;}
+  .div-hero h1 em{font-style:normal;background:var(--gradient);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .div-hero p{max-width:560px;font-size:16px;line-height:1.75;color:rgba(255,255,255,.7);margin-top:20px;}
+
+  /* ============ STICKY TABS ============ */
+  .tab-wrap{position:sticky;top:96px;z-index:900;display:flex;justify-content:center;padding:0 20px;margin-top:-64px;}
+  .tab-bar-outer{position:relative;max-width:100%;}
+  .tab-bar{display:flex;gap:6px;padding:6px;background:rgba(255,255,255,.9);backdrop-filter:blur(14px);border:1px solid rgba(0,0,0,.06);border-radius:18px;box-shadow:0 14px 34px rgba(0,0,0,.10);overflow-x:auto;max-width:100%;scroll-behavior:smooth;}
+  .tab-bar::-webkit-scrollbar{display:none;}
+  .tab-link{flex-shrink:0;padding:10px 18px;border-radius:12px;font-size:12.5px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:var(--muted-light);white-space:nowrap;transition:background .3s var(--ease), color .3s var(--ease);}
+  .tab-link.active{background:var(--gradient);color:#fff;}
+  .tab-link:hover:not(.active){background:rgba(0,0,0,.05);color:var(--charcoal);}
+  .tab-scroll-fade{
+    display:none;
+    position:absolute;top:6px;bottom:6px;right:6px;
+    width:44px;border-radius:0 14px 14px 0;
+    background:linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,.92) 65%);
+    cursor:pointer;
+    z-index:2;
+    align-items:center;justify-content:flex-end;
+    padding-right:6px;
+  }
+  .tab-scroll-fade svg{width:14px;height:14px;color:var(--teal);animation:nudgeRight 1.6s ease-in-out infinite;}
+  @keyframes nudgeRight{0%,100%{transform:translateX(0);}50%{transform:translateX(3px);}}
+  @media (max-width:640px){
+    .tab-scroll-fade.show{display:flex;}
+  }
+
+  /* ============ DIVISION SECTION ============ */
+  .division-section{padding:100px 0;scroll-margin-top:170px;}
+  .division-section.dark{background:var(--charcoal);position:relative;overflow:hidden;}
+  .division-section.dark::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 820px 600px at 8% -15%, rgba(20,150,125,.24), transparent 62%),radial-gradient(ellipse 820px 600px at 100% 115%, rgba(29,111,165,.24), transparent 62%);pointer-events:none;}
+  .division-section.dark .wrap{position:relative;z-index:1;}
+  .division-section.light{background:var(--white);}
+
+  .division-intro{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:70px;}
+  .division-index{font-size:13px;font-weight:800;letter-spacing:.1em;color:var(--teal);margin-bottom:10px;display:block;}
+  .division-section.dark .division-index{color:#5FE3C5;}
+  .division-intro h2{font-size:clamp(28px,4vw,40px);line-height:1.15;margin-bottom:8px;}
+  .division-section.dark .division-intro h2{color:#fff;}
+  .division-tagline{display:block;font-size:15px;font-weight:700;color:var(--blue);margin-bottom:18px;}
+  .division-section.dark .division-tagline{color:#7FC4E8;}
+  .division-intro p{font-size:15.5px;line-height:1.8;color:var(--muted-light);margin:0;}
+  .division-section.dark .division-intro p{color:var(--muted-dark);}
+  .division-image{aspect-ratio:4/3;border-radius:var(--radius-lg);box-shadow:var(--shadow-card);}
+  @media (max-width:880px){.division-intro{grid-template-columns:1fr;gap:32px;}.division-image{order:-1;}}
+
+  .division-secondary-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start;margin-top:36px;}
+  @media (max-width:920px){.division-secondary-grid{grid-template-columns:1fr;}}
+
+  .checklist{background:var(--off-white);border-radius:var(--radius-md);padding:8px;}
+  .division-section.dark .checklist{background:rgba(255,255,255,.04);border:1px solid var(--line);}
+  .checklist-item{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;border-radius:14px;transition:background .25s var(--ease);}
+  .checklist-item:hover{background:rgba(20,150,125,.07);}
+  .checklist-item svg{width:18px;height:18px;color:var(--teal);flex-shrink:0;margin-top:1px;}
+  .checklist-item span{font-size:14px;font-weight:600;color:var(--charcoal);line-height:1.5;}
+  .division-section.dark .checklist-item span{color:rgba(255,255,255,.85);}
+
+  .partner-card{background:var(--charcoal);border-radius:var(--radius-lg);padding:36px;color:#fff;position:relative;overflow:hidden;}
+  .division-section.light .partner-card{background:var(--charcoal);}
+  .division-section.dark .partner-card{background:rgba(255,255,255,.05);border:1px solid var(--line);}
+  .partner-card::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 500px 340px at 100% 0%, rgba(20,150,125,.14), transparent 65%);pointer-events:none;}
+  .partner-head{display:flex;align-items:center;gap:16px;margin-bottom:22px;position:relative;z-index:1;}
+  .partner-logo{width:126px;height:62px;border-radius:10px;padding:6px 10px;flex-shrink:0;}
+  .partner-logo--flush{padding:0;}
+  .partner-head h3{font-size:20px;color:#fff;margin-bottom:4px;}
+  .partner-head span{font-size:12.5px;color:rgba(255,255,255,.55);font-weight:600;}
+  .partner-card p{position:relative;z-index:1;font-size:14.5px;line-height:1.8;color:rgba(255,255,255,.72);margin:0 0 14px;}
+  .partner-card p:last-of-type{margin-bottom:0;}
+  .partner-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  @media (max-width:640px){.partner-pair{grid-template-columns:1fr;}}
+
+  .partner-body{position:relative;z-index:1;display:flex;flex-direction:column;gap:22px;}
+  .partner-text p{font-size:14.5px;line-height:1.8;color:rgba(255,255,255,.72);margin:0 0 14px;}
+  .partner-text p:last-of-type{margin-bottom:0;}
+  .partner-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .partner-gallery .img-placeholder{aspect-ratio:4/3;border-radius:12px;}
+  .partner-gallery--contain .img-placeholder{background-size:contain;background-color:#FFFFFF;}
+  .partner-gallery--compact{grid-template-columns:repeat(2,1fr);margin-top:16px;}
+  .partner-gallery--compact .img-placeholder{aspect-ratio:4/3;}
+  @media (max-width:640px){
+    .partner-gallery{grid-template-columns:repeat(2,1fr);}
+  }
+
+  .brand-strip-label{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-light);margin:0 0 16px;}
+  .division-section.dark .brand-strip-label{color:var(--muted-dark);}
+
+  /* ============ CTA BANNER ============ */
+  .cta-banner{position:relative;background:var(--gradient);padding:90px 0;text-align:center;overflow:hidden;}
+  .cta-inner{position:relative;z-index:1;max-width:640px;margin:0 auto;}
+  .cta-banner h2{color:#fff;font-size:clamp(28px,4.2vw,42px);margin-bottom:16px;text-transform:uppercase;}
+  .cta-banner p{color:rgba(255,255,255,.88);font-size:16px;line-height:1.7;margin-bottom:34px;}
+
+  /* ============ FOOTER (shared) ============ */
+  .site-footer{background:var(--charcoal);padding:80px 0 0;}
+  .footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:50px;padding-bottom:56px;border-bottom:1px solid var(--line);}
+  .footer-brand p{font-size:13.5px;line-height:1.8;color:rgba(255,255,255,.55);margin:18px 0 22px;max-width:280px;}
+    .footer-col h5{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);margin:0 0 20px;}
+  .footer-col a, .footer-col li{display:block;font-size:14px;color:rgba(255,255,255,.72);margin-bottom:13px;line-height:1.6;transition:color .25s, padding-left .25s;}
+  .footer-col a:hover{color:#fff;padding-left:4px;}
+  .footer-contact li{display:flex;gap:10px;align-items:flex-start;color:rgba(255,255,255,.72);}
+  .footer-contact svg{width:16px;height:16px;flex-shrink:0;margin-top:2px;color:#4FD9BC;}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;padding:26px 0;font-size:12.5px;color:rgba(255,255,255,.42);}
+  @media (max-width:920px){.footer-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:560px){.footer-grid{grid-template-columns:1fr;}.division-section{padding:70px 0;}}
+</style>
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<div class="nav-wrap">
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-mark"></span>
+      <span class="logo-text">Global Technology<span>Oil Field &amp; Gas Trading LLC</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="divisions.html" class="nav-link active">Divisions</a>
+    </div>
+    <div class="nav-right">
+      <a href="contact.html" class="nav-cta">Contact Us</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-panel" id="mobilePanel">
+    <div class="mobile-panel-inner">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="about.html" class="mobile-link">About Us</a>
+      <a href="divisions.html" class="mobile-link">Divisions</a>
+      <a href="contact.html" class="mobile-cta">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="div-hero">
+  <div class="hero-logo-watermark"></div>
+  <div class="wrap">
+    <span class="eyebrow on-dark">What We Do</span>
+    <h1>Four Divisions. <em>One Standard.</em></h1>
+    <p>With expertise across every division, we offer tailored solutions that meet the unique requirements of your business — ensuring efficiency, reliability, and safety across all operations.</p>
+  </div>
+</section>
+
+<!-- ============ STICKY TABS ============ -->
+<div class="tab-wrap">
+  <div class="tab-bar-outer">
+    <nav class="tab-bar" id="tabBar">
+      <a href="#telecommunication" class="tab-link" data-target="telecommunication">Telecommunication</a>
+      <a href="#power" class="tab-link" data-target="power">Power</a>
+      <a href="#hazardous-area" class="tab-link" data-target="hazardous-area">Hazardous Area</a>
+      <a href="#commercial" class="tab-link" data-target="commercial">Commercial</a>
+    </nav>
+    <div class="tab-scroll-fade" id="tabScrollFade">
+      <svg viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 01 TELECOMMUNICATION ============ -->
+<section id="telecommunication" class="division-section light">
+  <div class="wrap">
+    <div class="division-intro reveal">
+      <div>
+        <span class="division-index">Division 01</span>
+        <h2>Telecommunication</h2>
+        <span class="division-tagline">Providing Comprehensive Industrial Telecommunication Services</span>
+        <p>We offer a full suite of industrial telecommunication products and solutions designed to keep your business connected, efficient, and future ready. From advanced phone systems and intercoms to wireless solutions and PAGA infrastructure, we provide end-to-end support — from product selection and installation to maintenance and technical assistance.</p>
+      </div>
+      <div class="division-image img-placeholder" data-label="Cell tower / network equipment photo" style="background-image:url('resources/images/cell-tower-network-equipment-photo.jpg');"></div>
+    </div>
+
+    <div class="partner-card reveal">
+      <div class="partner-head">
+        <div class="partner-logo partner-logo--flush img-placeholder" data-label="Guardian Telecom Logo" style="background-image:url('resources/images/guardiantelecomlogo.png');"></div>
+        <div><h3>Guardian Telecom Ltd.</h3><span>Canada — "Tough. Trusted. True."</span></div>
+      </div>
+      <div class="partner-body">
+        <div class="partner-text">
+          <p>Guardian Telecom designs, builds, and commissions telephones, PA/GA, Page/Talk, and Talk/Back paging systems — ruggedized for non-hazardous, hazardous, Class I Division 1, Class I Division 2, and other hardened equipment applications.</p>
+          <p>Their products serve power plants in the desert sun, offshore platforms in arctic conditions, nuclear facilities, mining excavations, transportation hubs, and even military and space agency environments — all backed by the industry's best warranty and support.</p>
+        </div>
+        <div class="partner-gallery">
+          <div class="img-placeholder" data-label="Rugged telephone" style="background-image:url('resources/images/rugged-telephone.jpg');"></div>
+          <div class="img-placeholder" data-label="Emergency tower" style="background-image:url('resources/images/emergency-tower.jpg');"></div>
+          <div class="img-placeholder" data-label="PAGA system" style="background-image:url('resources/images/paga-system.jpg');"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="division-secondary-grid">
+      <div class="checklist reveal">
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Industrial grade rugged telephones (Guardian Telecom Ltd., Canada)</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Acoustic hoods</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>PAGA system</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>CCTV system</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Access control system</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Fiber optic cables</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Telecom racks</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Fiber optic accessories (patch panels &amp; patch cords)</span></div>
+      </div>
+      <div>
+        <div class="brand-strip-label">Brands We Distribute</div>
+        <div class="logo-grid reveal-stagger">
+          <div class="logo-slot img-placeholder" data-label="Cisco" style="background-image:url('resources/images/ciscologo.png');"></div>
+          <div class="logo-slot img-placeholder" data-label="Nokia" style="background-image:url('resources/images/nokialogo.png');"></div>
+          <div class="logo-slot img-placeholder" data-label="Hytera" style="background-image:url('resources/images/hyteralogo.png');"></div>
+          <div class="logo-slot img-placeholder" data-label="Motorola" style="background-image:url('resources/images/motorolalogo.png');"></div>
+          <div class="logo-slot img-placeholder" data-label="NEC" style="background-image:url('resources/images/neclogo.png');"></div>
+          <div class="logo-slot img-placeholder" data-label="Corning" style="background-image:url('resources/images/corninglogo.png');"></div>
+          <div class="logo-slot img-placeholder" data-label="Airbus" style="background-image:url('resources/images/airbuslogo.png');"></div>
+          <div class="logo-slot img-placeholder" data-label="Moxa" style="background-image:url('resources/images/moxalogo.png');"></div>
+          <div class="logo-slot img-placeholder" data-label="DNH" style="background-image:url('resources/images/dnhlogo.png');"></div>
+          <div class="logo-slot img-placeholder" data-label="e2s" style="background-image:url('resources/images/e2slogo.png');"></div>
+          <div class="logo-slot img-placeholder" data-label="ZTT" style="background-image:url('resources/images/zttlogo.png');"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 POWER ============ -->
+<section id="power" class="division-section dark">
+  <div class="wrap">
+    <div class="division-intro reveal">
+      <div>
+        <span class="division-index">Division 02</span>
+        <h2>Power</h2>
+        <span class="division-tagline">Providing Cutting-Edge Commercial Power Generation Systems &amp; Products</span>
+        <p>We offer a comprehensive range of commercial power generation systems and products designed to deliver reliable, efficient, and sustainable energy solutions. From system design and installation to ongoing maintenance, we provide end-to-end solutions tailored to meet your energy needs and sustainability goals.</p>
+      </div>
+      <div class="division-image img-placeholder" data-label="Solar array / power transmission photo" style="background-image:url('resources/images/solar-array-power-transmission-photo.jpg');"></div>
+    </div>
+
+    <div class="partner-card reveal">
+      <div class="partner-head">
+        <div class="partner-logo partner-logo--flush img-placeholder" data-label="La Marche Logo" style="background-image:url('resources/images/lamarchemfgcologo.png');"></div>
+        <div><h3>La Marche Mfg. Co.</h3><span>USA — Industry Leaders in AC/DC Solutions</span></div>
+      </div>
+      <div class="partner-body">
+        <div class="partner-text">
+          <p>Ensure uninterrupted power supply round the clock using La Marche's durable battery chargers, UPS, and power conversion solutions. Founded in 1945, the company brings almost 80 years of experience to utilities, telecom, engine start systems, marine applications, battery energy storage, railroads, and solar power systems.</p>
+          <p>By combining in-house manufacturing with a focus on technology, La Marche remains a leader in power solutions — committed to predictive maintenance, sustainability, and teamwork.</p>
+        </div>
+        <div class="partner-gallery partner-gallery--contain">
+          <div class="img-placeholder" data-label="Battery charger" style="background-image:url('resources/images/battery-charger.jpg');"></div>
+          <div class="img-placeholder" data-label="UPS cabinet" style="background-image:url('resources/images/ups-cabinet.jpg');"></div>
+          <div class="img-placeholder" data-label="Power conversion unit" style="background-image:url('resources/images/power-conversion-unit.jpg');"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="division-secondary-grid">
+      <div class="checklist reveal">
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Off-grid / on-grid solar power system solutions</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Battery chargers (La Marche Mfg. Co.)</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>UPS (uninterrupted power supply) by La Marche Mfg. Co.</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Solar panels &amp; inverters by La Marche Mfg. Co.</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>DC-DC converters by La Marche Mfg. Co.</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Solar batteries (lead acid, AGM, gel-type)</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Ni-Cd &amp; salt batteries</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>UPS batteries</span></div>
+      </div>
+      <div>
+        <div class="brand-strip-label">Brands We Distribute</div>
+        <div class="logo-grid reveal-stagger">
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Stryten Energy" style="background-image:url('resources/images/strytenenergylogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="EnerSys" style="background-image:url('resources/images/enersyslogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Saft" style="background-image:url('resources/images/saftlogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Varta" style="background-image:url('resources/images/vartalogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Exide" style="background-image:url('resources/images/exidelogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Fiamm" style="background-image:url('resources/images/fiammlogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Hoppecke" style="background-image:url('resources/images/hoppeckelogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Pharos Marine" style="background-image:url('resources/images/pharosmarinelogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="ALCAD" style="background-image:url('resources/images/alcadlogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="ACDelco" style="background-image:url('resources/images/acdelcologo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Mean Well" style="background-image:url('resources/images/meanwelllogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="GAZ" style="background-image:url('resources/images/gazlogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Eternity" style="background-image:url('resources/images/eternitylogo.png');"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 HAZARDOUS AREA PRODUCTS ============ -->
+<section id="hazardous-area" class="division-section light">
+  <div class="wrap">
+    <div class="division-intro reveal">
+      <div>
+        <span class="division-index">Division 03</span>
+        <h2>Hazardous Area Products</h2>
+        <span class="division-tagline">Providing Inclusive Hazardous Area Products and Services</span>
+        <p>We offer specialized solutions for hazardous areas, ensuring safety and compliance in environments where risks are heightened. Our range includes rugged and reliable equipment designed to operate safely under challenging conditions — from explosion-proof lighting and intrinsically safe communication devices to specialized enclosures and controls.</p>
+      </div>
+      <div class="division-image img-placeholder" data-label="Refinery / explosion-proof equipment photo" style="background-image:url('resources/images/refinery-explosion-proof-equipment-photo.jpg');"></div>
+    </div>
+
+    <div class="partner-card reveal">
+      <div class="partner-head">
+        <div class="partner-logo partner-logo--flush img-placeholder" data-label="Ex-Machinery Logo" style="background-image:url('resources/images/exmachinerylogo.png');"></div>
+        <div><h3>Ex-Machinery</h3><span>Specialist in ATEX Equipment</span></div>
+      </div>
+      <div class="partner-body">
+        <div class="partner-text">
+          <p>Manufacturer of explosion proof air conditioners, heaters, WiFi systems, and custom machinery. Ex-Machinery has provided systems of all sizes worldwide for refineries, chemical plants, offshore oil platforms, drill ships, and FPSO vessels.</p>
+          <p>With over 20 years of experience in ATEX and explosion safety, and full documentation support with FAT testing and certification, Ex-Machinery guarantees explosion safety and up-to-date quality for every product.</p>
+        </div>
+        <div class="partner-gallery">
+          <div class="img-placeholder" data-label="Explosion proof AC" style="background-image:url('resources/images/explosion-proof-ac.jpg');"></div>
+          <div class="img-placeholder" data-label="HVAC installation" style="background-image:url('resources/images/hvac-installation.jpg');"></div>
+          <div class="img-placeholder" data-label="ATEX certification tag" style="background-image:url('resources/images/atex-certification-tag.jpg');"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="division-secondary-grid">
+      <div class="checklist reveal">
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Explosion proof AC by Ex-Machinery, SKM, Safe Air &amp; Friedrich</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Explosion proof lights</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Explosion proof enclosures</span></div>
+      </div>
+      <div>
+        <div class="brand-strip-label">Brands We Distribute</div>
+        <div class="logo-grid reveal-stagger">
+          <div class="logo-slot img-placeholder" data-label="SKM" style="background-image:url('resources/images/skmlogo.png');"></div>
+          <div class="logo-slot img-placeholder" data-label="i.Safe" style="background-image:url('resources/images/isafelogo.png');"></div>
+          <div class="logo-slot img-placeholder" data-label="Rig-A-Lite" style="background-image:url('resources/images/rigalitelogo.png');"></div>
+          <div class="logo-slot img-placeholder" data-label="Safe Air Technology" style="background-image:url('resources/images/safeairtechnologylogo.png');"></div>
+          <div class="logo-slot img-placeholder" data-label="Pepperl+Fuchs" style="background-image:url('resources/images/pepperlfuchslogo.png');"></div>
+          <div class="logo-slot img-placeholder" data-label="Friedrich" style="background-image:url('resources/images/friedrichlogo.png');"></div>
+          <div class="logo-slot img-placeholder" data-label="Bartec" style="background-image:url('resources/images/barteclogo.png');"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 COMMERCIAL ============ -->
+<section id="commercial" class="division-section dark">
+  <div class="wrap">
+    <div class="division-intro reveal">
+      <div>
+        <span class="division-index">Division 04</span>
+        <h2>Commercial</h2>
+        <span class="division-tagline">Providing Expert Commercial Electrical Sales and Services</span>
+        <p>We specialize in delivering top-tier commercial electrical sales and services tailored to meet the unique needs of on-shore and off-shore oil and gas field industries. From electrical products and light fixtures to industrial tools and data/IT items, we offer comprehensive solutions to ensure your operations run safely, efficiently, and without interruption.</p>
+      </div>
+      <div class="division-image img-placeholder" data-label="Electrical substation / commercial equipment photo" style="background-image:url('resources/images/electrical-substation-commercial-equipment-photo.jpg');"></div>
+    </div>
+
+    <div class="partner-pair reveal">
+      <div class="partner-card">
+        <div class="partner-head">
+          <div class="partner-logo img-placeholder" data-label="Arbiter Systems Logo" style="background-image:url('resources/images/arbitersystemslogo.png');"></div>
+          <div><h3 style="font-size:16px;">Arbiter Systems Inc.</h3><span>Enabling Tomorrow's Technology Today</span></div>
+        </div>
+        <p>Manufactures GPS-based precision time clocks and synchronized power measurement products. Pioneers in GPS satellite-based precision timing since 1976, backed by a limited lifetime warranty.</p>
+        <div class="partner-gallery partner-gallery--compact">
+          <div class="img-placeholder" data-label="GPS clock unit" style="background-image:url('resources/images/gps-clock-unit.jpg');"></div>
+          <div class="img-placeholder" data-label="Power measurement device" style="background-image:url('resources/images/power-measurement-device.jpg');"></div>
+        </div>
+      </div>
+      <div class="partner-card">
+        <div class="partner-head">
+          <div class="partner-logo img-placeholder" data-label="Dalian Insulators Logo" style="background-image:url('resources/images/dalianinsulatorslogo.png');"></div>
+          <div><h3 style="font-size:16px;">Dalian Insulators</h3><span>We Power the World</span></div>
+        </div>
+        <p>Founded in 1915, a high-tech enterprise specializing in R&amp;D, production, and sales of insulator products — from 40–840kN suspension porcelain insulators to 1000kV composite insulators.</p>
+        <div class="partner-gallery partner-gallery--compact">
+          <div class="img-placeholder" data-label="Porcelain insulator" style="background-image:url('resources/images/porcelain-insulator.jpg');"></div>
+          <div class="img-placeholder" data-label="Composite insulator" style="background-image:url('resources/images/composite-insulator.jpg');"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="division-secondary-grid">
+      <div class="checklist reveal">
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>GPS clocks by Arbiter System</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Automotive &amp; alkaline batteries</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Air conditioners</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Lab equipment &amp; accessories</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Telecom &amp; radio spares</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Electrical equipment &amp; accessories</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Overhead line insulators by Dalian Insulators</span></div>
+        <div class="checklist-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Welding machineries &amp; machine tools</span></div>
+      </div>
+      <div>
+        <div class="brand-strip-label">Brands We Distribute</div>
+        <div class="logo-grid reveal-stagger">
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Bosch" style="background-image:url('resources/images/boschlogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Mitsubishi Electric" style="background-image:url('resources/images/mitsubishielectriclogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Daikin" style="background-image:url('resources/images/daikinlogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Makita" style="background-image:url('resources/images/makitalogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="DeWalt" style="background-image:url('resources/images/dewaltlogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Ridgid" style="background-image:url('resources/images/ridgidlogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Rittal" style="background-image:url('resources/images/rittallogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Grainger" style="background-image:url('resources/images/graingerlogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Ventil" style="background-image:url('resources/images/ventillogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Crouse-Hinds" style="background-image:url('resources/images/crousehindslogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Hytorc" style="background-image:url('resources/images/hytorclogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Cooperheat" style="background-image:url('resources/images/cooperheatlogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Duracell" style="background-image:url('resources/images/duracelllogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Snap-on" style="background-image:url('resources/images/snaponlogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Ajax" style="background-image:url('resources/images/ajaxlogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="WD-40" style="background-image:url('resources/images/wd40logo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="McMaster-Carr" style="background-image:url('resources/images/mcmastercarrlogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Belden" style="background-image:url('resources/images/beldenlogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Carrier" style="background-image:url('resources/images/carrierlogo.png');"></div>
+          <div class="logo-slot logo-slot--dark img-placeholder" data-label="Norden" style="background-image:url('resources/images/nordenlogo.png');"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="cta-banner">
+  <div class="wrap cta-inner reveal">
+    <h2>Need a Solution Across Divisions?</h2>
+    <p>Our team can scope a project that spans multiple divisions — just tell us what you're working on.</p>
+    <a href="contact.html" class="btn btn-light">Request a Quote</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-mark"></span>
+          <span class="logo-text">Global Technology<span>Oil Field &amp; Gas Trading LLC</span></span>
+        </a>
+        <p>A leading manufacturer's representative firm in the Middle East for Telecommunications, Power, Solar Energy, and Information Technology industries.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="divisions.html">Divisions</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h5>Divisions</h5>
+        <a href="#telecommunication">Telecommunication</a>
+        <a href="#power">Power</a>
+        <a href="#hazardous-area">Hazardous Area Products</a>
+        <a href="#commercial">Commercial</a>
+      </div>
+      <div class="footer-col footer-contact">
+        <h5>Head Office</h5>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8 6 6 10 6 13a6 6 0 0012 0c0-3-2-7-6-11z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span>Musaffah Industrial Area, Abu Dhabi, UAE</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span>+971 2 447 4928</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18v12H3V6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span>sales@globaltechnology.co</span></li>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Global Technology Oil Field and Gas Trading LLC. All rights reserved.</span>
+      <span>Offices in Abu Dhabi · Dubai · Al Khobar · Houston</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 30); }, { passive: true });
+
+  const navToggle = document.getElementById('navToggle');
+  const mobilePanel = document.getElementById('mobilePanel');
+  navToggle.addEventListener('click', () => {
+    const isOpen = navToggle.classList.toggle('open');
+    mobilePanel.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('in-view'); io.unobserve(entry.target); }
+    });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Auto-detect real images: once a correctly-named file exists in resources/images/,
+  // this cleanly swaps out the dashed-border placeholder + label for the real photo/logo.
+  // Nothing to configure — this runs automatically for every placeholder on the page.
+  document.querySelectorAll('.img-placeholder').forEach(el => {
+    const bg = el.style.backgroundImage;
+    const match = bg && bg.match(/url\(["']?(.*?)["']?\)/);
+    if (!match) return;
+    const url = match[1];
+    const testImg = new Image();
+    testImg.onload = () => el.classList.add('img-loaded');
+    testImg.onerror = () => el.classList.remove('img-loaded');
+    testImg.src = url;
+  });
+
+  // Scroll-spy for sticky tab bar — deterministic scroll-position check
+  // (avoids IntersectionObserver batching multiple sections as "intersecting"
+  // in the same frame, which could highlight the wrong tab mid-scroll)
+  const tabLinks = document.querySelectorAll('.tab-link');
+  const divisionSections = Array.from(document.querySelectorAll('.division-section'));
+  const SPY_OFFSET = 190; // navbar + sticky tab bar height, roughly
+
+  function updateActiveTab() {
+    const scrollPos = window.scrollY + SPY_OFFSET;
+    let currentId = divisionSections[0].id;
+    for (const sec of divisionSections) {
+      if (sec.offsetTop <= scrollPos) {
+        currentId = sec.id;
+      } else {
+        break;
+      }
+    }
+    tabLinks.forEach(link => {
+      link.classList.toggle('active', link.dataset.target === currentId);
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveTab, { passive: true });
+  window.addEventListener('resize', updateActiveTab);
+  updateActiveTab();
+
+  // Mobile scroll-fade hint for the sticky tab bar
+  const tabBar = document.getElementById('tabBar');
+  const tabScrollFade = document.getElementById('tabScrollFade');
+  function updateTabScrollFade() {
+    const hasOverflow = tabBar.scrollWidth > tabBar.clientWidth + 4;
+    const atEnd = tabBar.scrollLeft + tabBar.clientWidth >= tabBar.scrollWidth - 4;
+    tabScrollFade.classList.toggle('show', hasOverflow && !atEnd);
+  }
+  tabBar.addEventListener('scroll', updateTabScrollFade, { passive: true });
+  window.addEventListener('resize', updateTabScrollFade);
+  updateTabScrollFade();
+  tabScrollFade.addEventListener('click', () => {
+    tabBar.scrollBy({ left: 140, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>

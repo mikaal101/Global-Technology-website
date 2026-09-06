@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Technology Oil Field and Gas Trading LLC | Expertise That Drives Results</title>
+<meta name="description" content="Global Technology is a leading manufacturer's representative firm in the Middle East for Telecommunications, Power, Hazardous Area Products and Commercial Electrical solutions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ============ TOKENS ============ */
+  :root{
+    --charcoal:#1A1A1A;
+    --charcoal-soft:#222325;
+    --charcoal-elev:#28292c;
+    --teal:#14967D;
+    --blue:#1D6FA5;
+    --off-white:#F7F7F7;
+    --white:#FFFFFF;
+    --line:rgba(255,255,255,.12);
+    --line-soft:rgba(0,0,0,.08);
+    --placeholder:#DCE3E7;
+    --placeholder-line:#B7C2C8;
+    --muted-dark:rgba(255,255,255,.68);
+    --muted-light:rgba(26,26,26,.62);
+    --radius-lg:18px;
+    --radius-md:14px;
+    --radius-sm:9px;
+    --shadow-nav:0 12px 40px rgba(0,0,0,.28);
+    --shadow-card:0 18px 45px rgba(20,25,30,.10);
+    --shadow-card-hover:0 26px 60px rgba(20,25,30,.16);
+    --ease:cubic-bezier(.16,.8,.36,1);
+    --gradient:linear-gradient(135deg,var(--teal) 0%,var(--blue) 100%);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Montserrat',sans-serif;
+    background:var(--off-white);
+    color:var(--charcoal);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block;}
+  a{text-decoration:none;color:inherit;}
+  ul{list-style:none;margin:0;padding:0;}
+  button{font-family:inherit;cursor:pointer;}
+  h1,h2,h3,h4{margin:0;font-weight:800;letter-spacing:-.01em;text-transform:uppercase;}
+
+  :focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:4px;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important;}
+  }
+
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--teal);
+    margin-bottom:14px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px;height:2px;
+    background:var(--gradient);
+    display:inline-block;
+    border-radius:2px;
+  }
+  .eyebrow.on-dark{color:#5FE3C5;}
+
+  .section-head{max-width:640px;margin-bottom:52px;}
+  .section-head h2{font-size:clamp(28px,4vw,42px);line-height:1.15;}
+  .section-head p{font-size:16px;line-height:1.7;color:var(--muted-light);margin-top:16px;}
+  .section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+  .section-head.on-dark h2{color:var(--white);}
+  .section-head.on-dark p{color:var(--muted-dark);}
+
+  .wrap{max-width:1220px;margin:0 auto;padding:0 28px;}
+
+  /* ============ BUTTONS ============ */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:16px 30px;
+    border-radius:14px;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:.03em;
+    text-transform:uppercase;
+    transition:transform .35s var(--ease), box-shadow .35s var(--ease), background .35s var(--ease);
+    border:1px solid transparent;
+    white-space:nowrap;
+  }
+  .btn-primary{
+    background:var(--gradient);
+    color:#fff;
+    box-shadow:0 14px 30px rgba(20,150,125,.35);
+  }
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 40px rgba(20,150,125,.45);}
+  .btn-ghost{
+    background:rgba(255,255,255,.08);
+    color:#fff;
+    border:1px solid rgba(255,255,255,.35);
+    backdrop-filter:blur(6px);
+  }
+  .btn-ghost:hover{background:rgba(255,255,255,.18);transform:translateY(-3px);}
+  .btn-light{
+    background:#fff;
+    color:var(--charcoal);
+    box-shadow:0 14px 30px rgba(0,0,0,.18);
+  }
+  .btn-light:hover{transform:translateY(-3px);box-shadow:0 20px 40px rgba(0,0,0,.22);}
+
+  .link-arrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    color:var(--charcoal);
+  }
+  .link-arrow svg{transition:transform .3s var(--ease);}
+  .link-arrow:hover svg{transform:translateX(5px);}
+
+  /* ============ IMAGE PLACEHOLDERS ============ */
+  .img-placeholder{
+    position:relative;
+    background-color:var(--placeholder);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    border:1.5px dashed var(--placeholder-line);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+  }
+  .img-placeholder[class*="logo"]{
+    background-color:#FFFFFF;
+    background-size:contain;
+    background-origin:content-box;
+  }
+  .img-placeholder::after{
+    content:attr(data-label);
+    position:absolute;
+    bottom:10px;left:10px;right:10px;
+    font-size:10.5px;
+    font-weight:600;
+    letter-spacing:.03em;
+    text-transform:uppercase;
+    color:#4A5459;
+    background:var(--placeholder);
+    padding:6px 10px;
+    border-radius:8px;
+    line-height:1.4;
+    text-align:center;
+    pointer-events:none;
+  }
+  .img-placeholder.img-loaded::after{display:none;}
+  .img-placeholder.img-loaded{border:none;}
+  .img-placeholder[class*="logo"].img-loaded{border:1px solid #E5E9EB;box-shadow:0 3px 12px rgba(20,25,30,.08);}
+
+  .img-placeholder .ph-icon{
+    width:38px;height:38px;
+    opacity:.55;
+    color:#7C8A90;
+  }
+
+  /* ============ NAVBAR ============ */
+  .nav-wrap{
+    position:fixed;
+    top:18px;left:0;right:0;
+    z-index:1000;
+    padding:0 20px;
+  }
+  .navbar{
+    position:relative;
+    width:100%;
+    max-width:1180px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:18px;
+    padding:12px 14px 12px 22px;
+    border-radius:24px;
+    background:rgba(255,255,255,.09);
+    backdrop-filter:blur(22px) saturate(180%);
+    -webkit-backdrop-filter:blur(22px) saturate(180%);
+    border:1px solid rgba(255,255,255,.20);
+    box-shadow:var(--shadow-nav), inset 0 1px 0 rgba(255,255,255,.18);
+    transition:padding .4s var(--ease), background .4s var(--ease), border-color .4s var(--ease);
+  }
+  .navbar.scrolled{
+    padding:8px 10px 8px 20px;
+    background:rgba(18,18,18,.58);
+    border-color:rgba(255,255,255,.14);
+  }
+  .nav-logo{display:flex;align-items:center;gap:10px;}
+  .logo-mark{
+    width:34px;height:34px;
+    border-radius:10px;
+    background-image:url('resources/images/gtlogo.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+    background-color:transparent;
+    display:flex;align-items:center;justify-content:center;
+    flex-shrink:0;
+  }
+  .logo-text{
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:.05em;
+    color:#fff;
+    line-height:1.15;
+    text-transform:uppercase;
+  }
+  .logo-text span{display:block;font-size:9px;font-weight:600;letter-spacing:.14em;color:rgba(255,255,255,.55);}
+
+  .nav-links{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:6px;}
+  .nav-right{display:flex;align-items:center;gap:10px;}
+  .nav-link{
+    position:relative;
+    padding:10px 16px;
+    font-size:13.5px;
+    font-weight:600;
+    color:rgba(255,255,255,.82);
+    border-radius:11px;
+    transition:background .3s var(--ease), color .3s var(--ease);
+    background:none;
+    border:none;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+  }
+  .nav-link:hover{color:#fff;background:rgba(255,255,255,.10);}
+  .nav-link.active{color:#fff;background:rgba(255,255,255,.15);font-weight:700;}
+  .nav-link.active::after{content:"";position:absolute;bottom:3px;left:50%;transform:translateX(-50%);width:16px;height:3px;border-radius:2px;background:var(--gradient);}
+  .nav-link svg{width:11px;height:11px;transition:transform .3s var(--ease);}
+
+  .nav-dropdown{position:relative;}
+  .nav-dropdown:hover .dropdown-panel,
+  .nav-dropdown:focus-within .dropdown-panel{
+    opacity:1;
+    visibility:visible;
+    transform:translate(-50%,0);
+  }
+  .nav-dropdown:hover .nav-link svg{transform:rotate(180deg);}
+  .dropdown-panel{
+    position:absolute;
+    top:calc(100% + 14px);
+    left:50%;
+    transform:translate(-50%,8px);
+    width:280px;
+    background:rgba(26,26,26,.92);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:var(--radius-md);
+    padding:10px;
+    box-shadow:var(--shadow-nav);
+    opacity:0;
+    visibility:hidden;
+    transition:opacity .3s var(--ease), transform .3s var(--ease), visibility .3s;
+  }
+  .dropdown-panel a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:11px 14px;
+    border-radius:12px;
+    font-size:13px;
+    font-weight:600;
+    color:rgba(255,255,255,.85);
+    transition:background .25s, color .25s, padding-left .25s;
+  }
+  .dropdown-panel a:hover{background:rgba(255,255,255,.09);color:#fff;padding-left:18px;}
+  .dropdown-panel a::before{
+    content:"";
+    width:6px;height:6px;
+    border-radius:50%;
+    background:var(--gradient);
+    flex-shrink:0;
+  }
+
+  .nav-cta{
+    position:relative;
+    flex:0 0 auto;
+    padding:11px 22px;
+    border-radius:14px;
+    background:var(--gradient);
+    color:#fff;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.03em;
+    text-transform:uppercase;
+    box-shadow:0 10px 24px rgba(20,150,125,.35);
+    transition:transform .3s var(--ease), box-shadow .3s var(--ease);
+  }
+  .nav-cta:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 16px 32px rgba(20,150,125,.45);}
+  .nav-cta.active::after{content:"";position:absolute;bottom:6px;left:50%;transform:translateX(-50%);width:14px;height:3px;border-radius:2px;background:#fff;opacity:.85;}
+
+  .nav-toggle{
+    display:none;
+    width:38px;height:38px;
+    border-radius:12px;
+    background:rgba(255,255,255,.10);
+    border:none;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:4px;
+    flex-shrink:0;
+  }
+  .nav-toggle span{
+    width:16px;height:2px;
+    background:#fff;
+    border-radius:2px;
+    transition:transform .3s var(--ease), opacity .3s var(--ease);
+  }
+  .nav-toggle.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+  .nav-toggle.open span:nth-child(2){opacity:0;}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+
+  .mobile-panel{
+    max-width:1180px;
+    margin:10px auto 0;
+    display:grid;
+    grid-template-rows:0fr;
+    opacity:0;
+    transition:grid-template-rows .45s var(--ease), opacity .3s var(--ease);
+  }
+  .mobile-panel.open{grid-template-rows:1fr;opacity:1;}
+  .mobile-panel-inner{
+    overflow:hidden;
+    min-height:0;
+    background:rgba(18,18,20,.78);
+    backdrop-filter:blur(22px) saturate(160%);
+    -webkit-backdrop-filter:blur(22px) saturate(160%);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:var(--radius-md);
+    box-shadow:var(--shadow-nav);
+    padding:10px;
+  }
+  .mobile-link{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 16px;
+    font-size:14px;font-weight:700;color:#fff;
+    border-radius:12px;
+    text-transform:uppercase;letter-spacing:.03em;
+  }
+  .mobile-link:hover{background:rgba(255,255,255,.08);}
+  .mobile-dropdown-panel{
+    max-height:0;overflow:hidden;
+    transition:max-height .4s var(--ease);
+    padding-left:10px;
+  }
+  .mobile-dropdown-panel.open{max-height:260px;}
+  .mobile-dropdown-panel a{
+    display:flex;align-items:center;gap:10px;
+    padding:11px 16px;
+    font-size:13px;font-weight:600;
+    color:rgba(255,255,255,.75);
+  }
+  .mobile-dropdown-panel a::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gradient);}
+  .mobile-cta{
+    display:block;text-align:center;
+    margin-top:6px;
+    padding:14px;
+    border-radius:12px;
+    background:var(--gradient);
+    color:#fff;font-weight:800;text-transform:uppercase;font-size:13px;letter-spacing:.04em;
+  }
+
+  @media (max-width:920px){
+    .nav-links, .nav-cta{display:none;}
+    .nav-toggle{display:flex;}
+    .navbar{padding:10px 10px 10px 20px;}
+    .nav-right{gap:0;}
+  }
+
+  /* ============ HERO ============ */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    background:var(--charcoal);
+  }
+  .hero-video{
+    position:absolute;inset:0;
+    width:100%;height:100%;
+    object-fit:cover;
+    object-position:center;
+  }
+  .hero-overlay{
+    position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(15,16,17,.55) 0%, rgba(15,16,17,.72) 55%, rgba(15,16,17,.94) 100%);
+  }
+  .hero-grid{
+    position:absolute;inset:0;
+    background:
+      radial-gradient(ellipse 900px 620px at 15% 0%, rgba(20,150,125,.20), transparent 62%),
+      radial-gradient(ellipse 800px 600px at 100% 100%, rgba(29,111,165,.18), transparent 60%);
+  }
+  .hero-content{
+    position:relative;
+    z-index:2;
+    max-width:1220px;
+    margin:0 auto;
+    width:100%;
+    padding:118px 28px 56px;
+  }
+  .hero-inner{max-width:640px;}
+  .hero-tag{
+    position:relative;
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    padding:9px 16px 9px 13px;
+    border:1px solid rgba(79,217,188,.28);
+    border-radius:10px;
+    background:rgba(255,255,255,.06);
+    backdrop-filter:blur(8px);
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:#5FE3C5;
+    margin-bottom:20px;
+  }
+  .hero-tag svg{width:14px;height:14px;flex-shrink:0;opacity:.9;}
+
+  .hero-content h1{
+    font-size:clamp(36px,5.6vw,64px);
+    line-height:1.05;
+    color:#fff;
+    text-transform:uppercase;
+    letter-spacing:-.01em;
+  }
+  .hero-content h1 em{
+    font-style:normal;
+    background:var(--gradient);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+  .hero-sub{
+    font-size:16.5px;
+    line-height:1.65;
+    color:rgba(255,255,255,.78);
+    max-width:500px;
+    margin:16px 0 26px;
+    font-weight:500;
+  }
+  .hero-actions{display:flex;gap:16px;flex-wrap:wrap;}
+
+  .scroll-cue{
+    position:absolute;
+    bottom:20px;left:50%;
+    transform:translateX(-50%);
+    z-index:2;
+    display:flex;flex-direction:column;align-items:center;gap:8px;
+    font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+    color:rgba(255,255,255,.6);
+  }
+  .scroll-cue span{
+    width:1px;height:34px;
+    background:linear-gradient(180deg, rgba(255,255,255,.7), transparent);
+    position:relative;
+    overflow:hidden;
+  }
+  .scroll-cue span::after{
+    content:"";position:absolute;top:-100%;left:0;width:100%;height:100%;
+    background:linear-gradient(180deg, transparent, #4FD9BC);
+    animation:scrollLine 2.2s ease-in-out infinite;
+  }
+  @keyframes scrollLine{
+    0%{top:-100%;}
+    60%{top:100%;}
+    100%{top:100%;}
+  }
+
+  /* ============ REVEAL ============ */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal.in-view{opacity:1;transform:translateY(0);}
+  .reveal-stagger > *{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease), transform .7s var(--ease);}
+  .reveal-stagger.in-view > *{opacity:1;transform:translateY(0);}
+  .reveal-stagger.in-view > *:nth-child(1){transition-delay:.02s;}
+  .reveal-stagger.in-view > *:nth-child(2){transition-delay:.10s;}
+  .reveal-stagger.in-view > *:nth-child(3){transition-delay:.18s;}
+  .reveal-stagger.in-view > *:nth-child(4){transition-delay:.26s;}
+  .reveal-stagger.in-view > *:nth-child(5){transition-delay:.34s;}
+  .reveal-stagger.in-view > *:nth-child(6){transition-delay:.42s;}
+  .reveal-stagger.in-view > *:nth-child(7){transition-delay:.50s;}
+  .reveal-stagger.in-view > *:nth-child(8){transition-delay:.58s;}
+  .reveal-stagger.in-view > *:nth-child(9){transition-delay:.66s;}
+
+  /* ============ VALUE STRIP ============ */
+  .value-strip{
+    background:var(--white);
+    border-bottom:1px solid #ECEDEE;
+    padding:55px 0;
+  }
+  .value-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:1px;
+    background:#ECEDEE;
+  }
+  .value-item{
+    background:var(--white);
+    padding:17px 26px;
+    display:flex;
+    align-items:flex-start;
+    gap:16px;
+    transition:background .3s var(--ease);
+  }
+  .value-item:hover{background:var(--off-white);}
+  .value-icon{
+    width:44px;height:44px;flex-shrink:0;
+    border-radius:12px;
+    background:linear-gradient(135deg, rgba(20,150,125,.10), rgba(29,111,165,.10));
+    display:flex;align-items:center;justify-content:center;
+    color:var(--teal);
+  }
+  .value-icon svg{width:22px;height:22px;}
+  .value-item h4{margin:0 0 4px;font-size:14.5px;font-weight:700;line-height:1.35;}
+  .value-item p{margin:0;font-size:12.5px;color:var(--muted-light);line-height:1.5;}
+
+  @media (max-width:880px){
+    .value-grid{grid-template-columns:repeat(2,1fr);}
+  }
+  @media (max-width:520px){
+    .value-grid{grid-template-columns:1fr;}
+  }
+
+  /* ============ SECTION GENERIC ============ */
+  section{padding:110px 0;}
+  .section-dark{background:var(--charcoal);position:relative;overflow:hidden;}
+  .section-dark::before{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(ellipse 820px 600px at 8% -15%, rgba(20,150,125,.24), transparent 62%),
+      radial-gradient(ellipse 820px 600px at 100% 115%, rgba(29,111,165,.24), transparent 62%);
+    pointer-events:none;
+  }
+  @keyframes gradientDrift{
+    0%,100%{opacity:1;transform:scale(1);}
+    50%{opacity:.82;transform:scale(1.06);}
+  }
+  .section-dark.gradient-strong::before{
+    background:
+      radial-gradient(ellipse 950px 700px at 8% -15%, rgba(20,150,125,.42), transparent 62%),
+      radial-gradient(ellipse 900px 700px at 100% 115%, rgba(29,111,165,.40), transparent 60%),
+      radial-gradient(ellipse 650px 550px at 50% 45%, rgba(95,227,197,.16), transparent 55%);
+    animation:gradientDrift 11s ease-in-out infinite;
+  }
+  .section-dark .wrap{position:relative;z-index:1;}
+
+  /* ============ ABOUT TEASER ============ */
+  .teaser-grid{
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    gap:70px;
+    align-items:center;
+  }
+  .teaser-logo-square{
+    aspect-ratio:1/1;
+    border-radius:var(--radius-lg);
+    box-shadow:var(--shadow-card);
+    padding:14%;
+  }
+  .teaser-copy p{font-size:16px;line-height:1.8;color:var(--muted-light);margin:0 0 18px;}
+  .teaser-copy h2{font-size:clamp(28px,4vw,40px);line-height:1.18;margin-bottom:22px;}
+  .teaser-stats{display:flex;gap:36px;margin:30px 0 32px;flex-wrap:wrap;}
+  .teaser-stat b{display:block;font-size:30px;font-weight:800;background:var(--gradient);-webkit-background-clip:text;background-clip:text;color:transparent;}
+  .teaser-stat span{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted-light);font-weight:600;}
+
+  @media (max-width:880px){
+    .teaser-grid{grid-template-columns:1fr;gap:40px;}
+    .teaser-logo-square{max-width:280px;margin:0 auto;}
+  }
+
+  /* ============ DIVISIONS ============ */
+  .division-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+  }
+  .division-card{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+    background:var(--white);
+    border-radius:var(--radius-md);
+    padding:28px;
+    box-shadow:var(--shadow-card);
+    transition:transform .4s var(--ease), box-shadow .4s var(--ease);
+    position:relative;
+    overflow:hidden;
+  }
+  .division-card::before{
+    content:"";
+    position:absolute;left:0;top:0;bottom:0;width:4px;
+    background:var(--gradient);
+    transform:scaleY(0);transform-origin:bottom;
+    transition:transform .4s var(--ease);
+  }
+  .division-card:hover::before{transform:scaleY(1);}
+  .division-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-card-hover);}
+  .division-image{
+    width:110px;height:110px;flex-shrink:0;
+    border-radius:12px;
+  }
+  .division-image::after{
+    font-size:8px;
+    padding:4px 6px;
+    bottom:7px;left:7px;right:7px;
+    line-height:1.25;
+  }
+  .division-image .ph-icon-sm{width:20px;height:20px;opacity:.5;color:#7C8A90;}
+  .division-body{position:relative;flex:1;}
+  .division-index{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin-bottom:6px;display:block;}
+  .division-body h3{font-size:18px;margin-bottom:6px;}
+  .division-desc{font-size:13.5px;line-height:1.65;color:var(--muted-light);margin:0 0 14px;}
+
+  @media (max-width:880px){
+    .division-grid{grid-template-columns:1fr;}
+  }
+  @media (max-width:520px){
+    .division-card{padding:22px;gap:16px;}
+    .division-image{width:84px;height:84px;}
+  }
+
+  /* ============ MARKETS ============ */
+  .markets-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+  }
+  .market-tile{
+    aspect-ratio:16/11;
+    border-radius:var(--radius-sm);
+    position:relative;
+    transition:transform .4s var(--ease);
+  }
+  .market-tile:hover{transform:scale(1.02);}
+  .market-label{
+    position:absolute;top:12px;left:12px;
+    background:rgba(255,255,255,.9);
+    padding:6px 12px;
+    border-radius:8px;
+    font-size:10.5px;font-weight:700;
+    text-transform:uppercase;letter-spacing:.03em;
+    color:var(--charcoal);
+    z-index:1;
+  }
+
+  @media (max-width:880px){
+    .markets-grid{grid-template-columns:repeat(2,1fr);gap:12px;}
+    .market-tile{aspect-ratio:3/2;}
+  }
+
+  /* ============ FEATURED CLIENTS ============ */
+  .featured-clients{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    max-width:1080px;
+    margin:0 auto 42px;
+  }
+  .logo-slot--featured{
+    width:192px;height:104px;
+    padding:15px 22px;
+    box-shadow:0 10px 26px rgba(0,0,0,.20);
+  }
+  .featured-divider{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    max-width:920px;
+    margin:0 auto 42px;
+  }
+  .featured-divider::before, .featured-divider::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:rgba(255,255,255,.14);
+  }
+  .featured-divider span{
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:rgba(255,255,255,.45);
+    white-space:nowrap;
+  }
+  @media (max-width:600px){
+    .logo-slot--featured{width:150px;height:84px;padding:12px 16px;}
+  }
+
+  /* ============ TRUST STRIP ============ */
+  .trust-strip{
+    padding:0;
+    background:var(--charcoal-soft);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .trust-inner{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:24px;
+    padding-top:38px;
+    padding-bottom:38px;
+  }
+  .trust-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#fff;
+  }
+  .trust-item svg{width:26px;height:26px;color:#4FD9BC;flex-shrink:0;}
+  .trust-item b{display:block;font-size:15px;font-weight:800;letter-spacing:.02em;}
+  .trust-item span{display:block;font-size:11px;color:rgba(255,255,255,.55);letter-spacing:.04em;text-transform:uppercase;margin-top:2px;}
+  @media (max-width:920px){
+    .trust-inner{
+      flex-direction:column;
+      align-items:flex-start;
+      gap:18px;
+      padding-top:32px;
+      padding-bottom:32px;
+    }
+  }
+
+  /* ============ MARQUEE / CLIENTS + BRANDS ============ */
+  .marquee-mask{
+    width:100%;
+    overflow:hidden;
+    padding:18px 0;
+    -webkit-mask-image:linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    mask-image:linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  }
+  .marquee-track{
+    display:flex;
+    gap:14px;
+    width:max-content;
+    animation:marqueeScroll 46s linear infinite;
+  }
+  .marquee-track.reverse{animation-direction:reverse;animation-duration:56s;}
+  .marquee-mask:hover .marquee-track{animation-play-state:paused;}
+  @keyframes marqueeScroll{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+  .logo-slot{
+    flex-shrink:0;
+    width:172px;height:88px;
+    border-radius:10px;
+    padding:9px 14px;
+    transition:border-color .3s, transform .3s, box-shadow .3s;
+  }
+  .logo-slot:hover{transform:translateY(-2px);border-color:var(--teal);box-shadow:0 8px 18px rgba(20,150,125,.14);}
+  .logo-slot--dark{border-color:rgba(255,255,255,.35);}
+  .logo-slot--dark:hover{border-color:#4FD9BC;box-shadow:0 8px 18px rgba(0,0,0,.28);}
+  .logo-slot--featured:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(0,0,0,.26);}
+
+  .marquee-block + .marquee-block{margin-top:16px;}
+
+  /* ============ CTA BANNER ============ */
+  .cta-banner{
+    position:relative;
+    background:var(--gradient);
+    padding:90px 0;
+    text-align:center;
+    overflow:hidden;
+  }
+  .cta-inner{position:relative;z-index:1;max-width:640px;margin:0 auto;}
+  .cta-banner h2{color:#fff;font-size:clamp(28px,4.2vw,42px);margin-bottom:16px;text-transform:uppercase;}
+  .cta-banner p{color:rgba(255,255,255,.88);font-size:16px;line-height:1.7;margin-bottom:34px;}
+
+  /* ============ FOOTER ============ */
+  .site-footer{background:var(--charcoal);padding:80px 0 0;}
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr 1.2fr;
+    gap:50px;
+    padding-bottom:56px;
+    border-bottom:1px solid var(--line);
+  }
+  .footer-brand .logo-text{color:#fff;}
+  .footer-brand p{font-size:13.5px;line-height:1.8;color:rgba(255,255,255,.55);margin:18px 0 22px;max-width:280px;}
+  .footer-col h5{
+    font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+    color:rgba(255,255,255,.4);margin:0 0 20px;
+  }
+  .footer-col a, .footer-col li{
+    display:block;
+    font-size:14px;
+    color:rgba(255,255,255,.72);
+    margin-bottom:13px;
+    line-height:1.6;
+    transition:color .25s, padding-left .25s;
+  }
+  .footer-col a:hover{color:#fff;padding-left:4px;}
+  .footer-contact li{display:flex;gap:10px;align-items:flex-start;color:rgba(255,255,255,.72);}
+  .footer-contact svg{width:16px;height:16px;flex-shrink:0;margin-top:2px;color:#4FD9BC;}
+
+  .footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:14px;
+    padding:26px 0;
+    font-size:12.5px;
+    color:rgba(255,255,255,.42);
+  }
+  .footer-bottom a{color:rgba(255,255,255,.42);}
+  .footer-bottom a:hover{color:#fff;}
+
+  @media (max-width:920px){
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:560px){
+    .footer-grid{grid-template-columns:1fr;}
+    section{padding:76px 0;}
+    .hero-content{padding:110px 22px 70px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<div class="nav-wrap">
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo">
+      <span class="logo-mark"></span>
+      <span class="logo-text">Global Technology<span>Oil Field &amp; Gas Trading LLC</span></span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="divisions.html" class="nav-link">Divisions</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="contact.html" class="nav-cta">Contact Us</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-panel" id="mobilePanel">
+    <div class="mobile-panel-inner">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="about.html" class="mobile-link">About Us</a>
+      <a href="divisions.html" class="mobile-link">Divisions</a>
+      <a href="contact.html" class="mobile-cta">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <video class="hero-video" autoplay muted loop playsinline preload="auto">
+    <source src="resources/videos/heroGT.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-content">
+    <div class="hero-inner">
+      <span class="hero-tag"><svg viewBox="0 0 24 24" fill="none"><path d="M4 21V5a1 1 0 011-1h6a1 1 0 011 1v16M12 21v-9a1 1 0 011-1h6a1 1 0 011 1v9M4 21h16M8 8h.01M8 12h.01M8 16h.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Global Technology Oil Field &amp; Gas Trading LLC</span>
+      <h1>Expertise That<br><em>Drives Results</em></h1>
+      <p class="hero-sub">It's how we combine our skills and expertise with the right technology for the right results — across telecommunications, power, hazardous area products, and commercial electrical solutions.</p>
+      <div class="hero-actions">
+        <a href="#divisions" class="btn btn-primary">Explore Our Divisions</a>
+        <a href="contact.html" class="btn btn-ghost">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span></span>Scroll</div>
+</section>
+
+<!-- ============ VALUE STRIP ============ -->
+<section class="value-strip">
+  <div class="value-grid">
+    <div class="value-item">
+      <div class="value-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 3h6v3H9V3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 6h12v15H6V6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div><h4>Procurement Services</h4><p>Sourcing the right equipment from trusted global manufacturers.</p></div>
+    </div>
+    <div class="value-item">
+      <div class="value-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="8" cy="16" r="4" stroke="currentColor" stroke-width="1.6"/><path d="M11 13l8-8M16 4h4v4M13 8l2 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div><h4>Lump Sum Turnkey Services</h4><p>End-to-end project delivery under a single scope and budget.</p></div>
+    </div>
+    <div class="value-item">
+      <div class="value-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 005.4-5.4l-2.6 2.6-2-2 2.6-2.6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+      <div><h4>Installation, Testing &amp; Commissioning</h4><p>Certified teams ensuring every system runs exactly as specified.</p></div>
+    </div>
+    <div class="value-item">
+      <div class="value-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M12 3v3M12 18v3M21 12h-3M6 12H3M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1M18.4 18.4l-2.1-2.1M7.7 7.7L5.6 5.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+      <div><h4>Engineering &amp; Technical Assistance</h4><p>Expert design-stage support tailored to your project's needs.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT TEASER ============ -->
+<section style="padding:56px 0 56px;">
+  <div class="wrap teaser-grid reveal">
+    <div class="teaser-logo-square img-placeholder" data-label="Global Technology Logo" style="background-image:url('resources/images/gtlogo.png');"></div>
+    <div class="teaser-copy">
+      <span class="eyebrow">Who We Are</span>
+      <h2>A Trusted Partner,<br>Not Just a Supplier</h2>
+      <p>Global Technology is a leading manufacturer's representative firm in the Middle East for the Telecommunications, Power, and Hazardous Area industries. We hold strong partnerships with leading manufacturers and provide expert knowledge and services to our customers.</p>
+      <p>When you work with us, you're not just buying a product — you're gaining a trusted partner dedicated to your success, backed by exceptional service and ongoing support that ensures your operations run smoothly, safely, cost-effectively, and efficiently.</p>
+      <div class="teaser-stats">
+        <div class="teaser-stat"><b>1999</b><span>Founded</span></div>
+        <div class="teaser-stat"><b>4</b><span>Divisions</span></div>
+        <div class="teaser-stat"><b>4</b><span>Global Offices</span></div>
+        <div class="teaser-stat"><b>3</b><span>ISO Certifications</span></div>
+      </div>
+      <a href="about.html" class="link-arrow">Learn About Us <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIVISIONS ============ -->
+<section id="divisions" style="background:var(--off-white);padding-top:64px;">
+  <div class="wrap">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <span class="eyebrow" style="justify-content:center;">What We Do</span>
+      <h2>Four Divisions.<br>One Standard of Excellence.</h2>
+      <p>With expertise across every division, we offer tailored solutions that meet the unique requirements of your business — ensuring efficiency, reliability, and safety across all operations.</p>
+    </div>
+
+    <div class="division-grid reveal-stagger">
+      <a href="divisions.html#telecommunication" class="division-card">
+        <div class="division-image img-placeholder" data-label="Telecom tower photo" style="background-image:url('resources/images/telecom-tower-photo.jpg');"></div>
+        <div class="division-body">
+          <span class="division-index">01 — Telecommunication</span>
+          <h3>Telecommunication Division</h3>
+          <p class="division-desc">A full suite of industrial telecommunication products and solutions designed to keep your business connected, efficient, and future-ready.</p>
+          <span class="link-arrow">View Division <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+
+      <a href="divisions.html#power" class="division-card">
+        <div class="division-image img-placeholder" data-label="Solar / power photo" style="background-image:url('resources/images/solar-power-photo.jpg');"></div>
+        <div class="division-body">
+          <span class="division-index">02 — Power</span>
+          <h3>Power Division</h3>
+          <p class="division-desc">Cutting-edge commercial power generation systems and products delivering reliable, efficient, and sustainable energy solutions.</p>
+          <span class="link-arrow">View Division <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+
+      <a href="divisions.html#hazardous-area" class="division-card">
+        <div class="division-image img-placeholder" data-label="Refinery / hazardous photo" style="background-image:url('resources/images/refinery-hazardous-photo.jpg');"></div>
+        <div class="division-body">
+          <span class="division-index">03 — Hazardous Area Products</span>
+          <h3>Hazardous Area Products Division</h3>
+          <p class="division-desc">Inclusive hazardous area products and services, ensuring safety and compliance in environments where risks are heightened.</p>
+          <span class="link-arrow">View Division <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+
+      <a href="divisions.html#commercial" class="division-card">
+        <div class="division-image img-placeholder" data-label="Electrical / commercial photo" style="background-image:url('resources/images/electrical-commercial-photo.jpg');"></div>
+        <div class="division-body">
+          <span class="division-index">04 — Commercial</span>
+          <h3>Commercial Division</h3>
+          <p class="division-desc">Expert commercial electrical sales and services tailored to the unique needs of on-shore and off-shore oil and gas field industries.</p>
+          <span class="link-arrow">View Division <svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARKETS WE SERVE ============ -->
+<section style="background:var(--white);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Where We Operate</span>
+      <h2>Markets We Serve</h2>
+      <p>From offshore platforms to utility grids, our solutions support the industries that keep the region running.</p>
+    </div>
+    <div class="markets-grid reveal-stagger">
+      <div class="market-tile img-placeholder" data-label="Oil rig at dusk" style="background-image:url('resources/images/oil-rig-at-dusk.jpg');"><span class="market-label">Oil &amp; Gas</span></div>
+      <div class="market-tile img-placeholder" data-label="Telecom worker with tower" style="background-image:url('resources/images/telecom-worker-with-tower.jpg');"><span class="market-label">Telecommunication</span></div>
+      <div class="market-tile img-placeholder" data-label="Power transmission lines" style="background-image:url('resources/images/power-transmission-lines.jpg');"><span class="market-label">Power</span></div>
+      <div class="market-tile img-placeholder" data-label="Water treatment facility" style="background-image:url('resources/images/water-treatment-facility.jpg');"><span class="market-label">Water</span></div>
+      <div class="market-tile img-placeholder" data-label="Petrochemical plant at night" style="background-image:url('resources/images/petrochemical-plant-at-night.jpg');"><span class="market-label">Petrochemicals</span></div>
+      <div class="market-tile img-placeholder" data-label="Open-pit mine" style="background-image:url('resources/images/open-pit-mine.jpg');"><span class="market-label">Mining</span></div>
+      <div class="market-tile img-placeholder" data-label="City skyline / infrastructure" style="background-image:url('resources/images/city-skyline-infrastructure.jpg');"><span class="market-label">Infrastructure</span></div>
+      <div class="market-tile img-placeholder" data-label="Railway / tram system" style="background-image:url('resources/images/railway-tram-system.jpg');"><span class="market-label">Railway</span></div>
+      <div class="market-tile img-placeholder" data-label="Utility plant with smokestacks" style="background-image:url('resources/images/utility-plant-with-smokestacks.jpg');"><span class="market-label">Utilities</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust-strip">
+  <div class="wrap trust-inner">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      <div><b>Since 1999</b><span>25+ Years of Industry Experience</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div><b>ISO 9001:2015</b><span>Quality Management</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div><b>ISO 14001:2015</b><span>Environmental Management</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div><b>ISO 45001:2015</b><span>Health &amp; Safety Management</span></div>
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8 6 6 10 6 13a6 6 0 0012 0c0-3-2-7-6-11z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+      <div><b>4 Offices</b><span>UAE · KSA · USA</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLIENTS ============ -->
+<section class="section-dark" style="padding-bottom:60px;">
+  <div class="wrap">
+    <div class="section-head on-dark center reveal">
+      <span class="eyebrow on-dark" style="justify-content:center;">Trusted By Industry Leaders</span>
+      <h2>Our Clients</h2>
+    </div>
+    <div class="featured-clients reveal-stagger">
+      <div class="logo-slot logo-slot--dark logo-slot--featured img-placeholder" data-label="Saudi Aramco" style="background-image:url('resources/images/saudiaramcologo.png');"></div>
+      <div class="logo-slot logo-slot--dark logo-slot--featured img-placeholder" data-label="ADNOC" style="background-image:url('resources/images/adnoclogo.png');"></div>
+      <div class="logo-slot logo-slot--dark logo-slot--featured img-placeholder" data-label="Taqa" style="background-image:url('resources/images/taqalogo.png');"></div>
+      <div class="logo-slot logo-slot--dark logo-slot--featured img-placeholder" data-label="Borouge" style="background-image:url('resources/images/borougelogo.png');"></div>
+      <div class="logo-slot logo-slot--dark logo-slot--featured img-placeholder" data-label="Dubai Electricity &amp; Water Authority" style="background-image:url('resources/images/dubaielectricitywaterauthoritylogo.png');"></div>
+    </div>
+    <div class="featured-divider reveal"><span>And Many More</span></div>
+  </div>
+  <div class="marquee-mask reveal">
+    <div class="marquee-track">
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Abu Dhabi Water &amp; Electricity Authority" style="background-image:url('resources/images/abudhabiwaterelectricityauthoritylogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Abu Dhabi Airports" style="background-image:url('resources/images/abudhabiairportslogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Dragon Oil" style="background-image:url('resources/images/dragonoillogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="SAIPEM" style="background-image:url('resources/images/saipemlogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Petrofac" style="background-image:url('resources/images/petrofaclogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="SABIC" style="background-image:url('resources/images/sabiclogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="SATORP" style="background-image:url('resources/images/satorplogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Sadara" style="background-image:url('resources/images/sadaralogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="PETRONAS" style="background-image:url('resources/images/petronaslogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Ma'aden" style="background-image:url('resources/images/maadenlogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="KBR" style="background-image:url('resources/images/kbrlogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="ABB" style="background-image:url('resources/images/abblogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="CPECC" style="background-image:url('resources/images/cpecclogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Abu Dhabi Distribution Co." style="background-image:url('resources/images/abudhabidistributioncologo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Emirates Nuclear Energy Corporation" style="background-image:url('resources/images/emiratesnuclearenergycorporationlogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Robt Stone" style="background-image:url('resources/images/robtstonelogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Al Asab EST." style="background-image:url('resources/images/alasabestlogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Sapco" style="background-image:url('resources/images/sapcologo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="KJO" style="background-image:url('resources/images/kjologo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Ministry of Electricity &amp; Water &amp; Renewable Energy" style="background-image:url('resources/images/ministryofelectricitywaterrenewableenergylogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Petronash" style="background-image:url('resources/images/petronashlogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Saline Water Conversion Corporation" style="background-image:url('resources/images/salinewaterconversioncorporationlogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Sharjah Electricity and Water Authority" style="background-image:url('resources/images/sharjahelectricityandwaterauthoritylogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Alderley" style="background-image:url('resources/images/alderleylogo.png');"></div>
+      <!-- duplicate set for seamless loop -->
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Abu Dhabi Water &amp; Electricity Authority" style="background-image:url('resources/images/abudhabiwaterelectricityauthoritylogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Abu Dhabi Airports" style="background-image:url('resources/images/abudhabiairportslogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Dragon Oil" style="background-image:url('resources/images/dragonoillogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="SAIPEM" style="background-image:url('resources/images/saipemlogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Petrofac" style="background-image:url('resources/images/petrofaclogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="SABIC" style="background-image:url('resources/images/sabiclogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="SATORP" style="background-image:url('resources/images/satorplogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Sadara" style="background-image:url('resources/images/sadaralogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="PETRONAS" style="background-image:url('resources/images/petronaslogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Ma'aden" style="background-image:url('resources/images/maadenlogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="KBR" style="background-image:url('resources/images/kbrlogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="ABB" style="background-image:url('resources/images/abblogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="CPECC" style="background-image:url('resources/images/cpecclogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Abu Dhabi Distribution Co." style="background-image:url('resources/images/abudhabidistributioncologo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Emirates Nuclear Energy Corporation" style="background-image:url('resources/images/emiratesnuclearenergycorporationlogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Robt Stone" style="background-image:url('resources/images/robtstonelogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Al Asab EST." style="background-image:url('resources/images/alasabestlogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Sapco" style="background-image:url('resources/images/sapcologo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="KJO" style="background-image:url('resources/images/kjologo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Ministry of Electricity &amp; Water &amp; Renewable Energy" style="background-image:url('resources/images/ministryofelectricitywaterrenewableenergylogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Petronash" style="background-image:url('resources/images/petronashlogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Saline Water Conversion Corporation" style="background-image:url('resources/images/salinewaterconversioncorporationlogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Sharjah Electricity and Water Authority" style="background-image:url('resources/images/sharjahelectricityandwaterauthoritylogo.png');"></div>
+      <div class="logo-slot logo-slot--dark img-placeholder" data-label="Alderley" style="background-image:url('resources/images/alderleylogo.png');"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRANDS WE DISTRIBUTE ============ -->
+<section style="background:var(--white);padding-bottom:60px;">
+  <div class="wrap">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <span class="eyebrow" style="justify-content:center;">Manufacturer Partnerships</span>
+      <h2>Brands We Distribute</h2>
+      <p>Representing world-class manufacturers across telecommunications, power, hazardous area equipment, and commercial electrical solutions.</p>
+    </div>
+  </div>
+  <div class="marquee-mask reveal">
+    <div class="marquee-track reverse">
+      <div class="logo-slot img-placeholder" data-label="Guardian Telecom" style="background-image:url('resources/images/guardiantelecomlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Cisco" style="background-image:url('resources/images/ciscologo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Nokia" style="background-image:url('resources/images/nokialogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Motorola" style="background-image:url('resources/images/motorolalogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="La Marche Mfg. Co." style="background-image:url('resources/images/lamarchemfgcologo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="EnerSys" style="background-image:url('resources/images/enersyslogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Saft" style="background-image:url('resources/images/saftlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="i.Safe" style="background-image:url('resources/images/isafelogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Pepperl+Fuchs" style="background-image:url('resources/images/pepperlfuchslogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Bartec" style="background-image:url('resources/images/barteclogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Ex-Machinery" style="background-image:url('resources/images/exmachinerylogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Bosch" style="background-image:url('resources/images/boschlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Mitsubishi Electric" style="background-image:url('resources/images/mitsubishielectriclogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Daikin" style="background-image:url('resources/images/daikinlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Arbiter Systems" style="background-image:url('resources/images/arbitersystemslogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Dalian Insulators" style="background-image:url('resources/images/dalianinsulatorslogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="DNH" style="background-image:url('resources/images/dnhlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="e2s" style="background-image:url('resources/images/e2slogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="ZTT" style="background-image:url('resources/images/zttlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="ALCAD" style="background-image:url('resources/images/alcadlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="ACDelco" style="background-image:url('resources/images/acdelcologo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Mean Well" style="background-image:url('resources/images/meanwelllogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="GAZ" style="background-image:url('resources/images/gazlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Eternity" style="background-image:url('resources/images/eternitylogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Ventil" style="background-image:url('resources/images/ventillogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Crouse-Hinds" style="background-image:url('resources/images/crousehindslogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Hytorc" style="background-image:url('resources/images/hytorclogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Cooperheat" style="background-image:url('resources/images/cooperheatlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Duracell" style="background-image:url('resources/images/duracelllogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Snap-on" style="background-image:url('resources/images/snaponlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Ajax" style="background-image:url('resources/images/ajaxlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="WD-40" style="background-image:url('resources/images/wd40logo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="McMaster-Carr" style="background-image:url('resources/images/mcmastercarrlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Belden" style="background-image:url('resources/images/beldenlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Carrier" style="background-image:url('resources/images/carrierlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Norden" style="background-image:url('resources/images/nordenlogo.png');"></div>
+      <!-- duplicate set for seamless loop -->
+      <div class="logo-slot img-placeholder" data-label="Guardian Telecom" style="background-image:url('resources/images/guardiantelecomlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Cisco" style="background-image:url('resources/images/ciscologo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Nokia" style="background-image:url('resources/images/nokialogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Motorola" style="background-image:url('resources/images/motorolalogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="La Marche Mfg. Co." style="background-image:url('resources/images/lamarchemfgcologo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="EnerSys" style="background-image:url('resources/images/enersyslogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Saft" style="background-image:url('resources/images/saftlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="i.Safe" style="background-image:url('resources/images/isafelogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Pepperl+Fuchs" style="background-image:url('resources/images/pepperlfuchslogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Bartec" style="background-image:url('resources/images/barteclogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Ex-Machinery" style="background-image:url('resources/images/exmachinerylogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Bosch" style="background-image:url('resources/images/boschlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Mitsubishi Electric" style="background-image:url('resources/images/mitsubishielectriclogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Daikin" style="background-image:url('resources/images/daikinlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Arbiter Systems" style="background-image:url('resources/images/arbitersystemslogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Dalian Insulators" style="background-image:url('resources/images/dalianinsulatorslogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="DNH" style="background-image:url('resources/images/dnhlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="e2s" style="background-image:url('resources/images/e2slogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="ZTT" style="background-image:url('resources/images/zttlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="ALCAD" style="background-image:url('resources/images/alcadlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="ACDelco" style="background-image:url('resources/images/acdelcologo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Mean Well" style="background-image:url('resources/images/meanwelllogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="GAZ" style="background-image:url('resources/images/gazlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Eternity" style="background-image:url('resources/images/eternitylogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Ventil" style="background-image:url('resources/images/ventillogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Crouse-Hinds" style="background-image:url('resources/images/crousehindslogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Hytorc" style="background-image:url('resources/images/hytorclogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Cooperheat" style="background-image:url('resources/images/cooperheatlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Duracell" style="background-image:url('resources/images/duracelllogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Snap-on" style="background-image:url('resources/images/snaponlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Ajax" style="background-image:url('resources/images/ajaxlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="WD-40" style="background-image:url('resources/images/wd40logo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="McMaster-Carr" style="background-image:url('resources/images/mcmastercarrlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Belden" style="background-image:url('resources/images/beldenlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Carrier" style="background-image:url('resources/images/carrierlogo.png');"></div>
+      <div class="logo-slot img-placeholder" data-label="Norden" style="background-image:url('resources/images/nordenlogo.png');"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="cta-banner">
+  <div class="wrap cta-inner reveal">
+    <h2>Let's Power Your Next Project</h2>
+    <p>From procurement to commissioning, our team is ready to deliver the right technology for the right results.</p>
+    <a href="contact.html" class="btn btn-light">Get in Touch</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">
+          <span class="logo-mark"></span>
+          <span class="logo-text">Global Technology<span>Oil Field &amp; Gas Trading LLC</span></span>
+        </a>
+        <p>A leading manufacturer's representative firm in the Middle East for Telecommunications, Power, Solar Energy, and Information Technology industries.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="#home">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="#divisions">Divisions</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Divisions</h5>
+        <a href="divisions.html#telecommunication">Telecommunication</a>
+        <a href="divisions.html#power">Power</a>
+        <a href="divisions.html#hazardous-area">Hazardous Area Products</a>
+        <a href="divisions.html#commercial">Commercial</a>
+      </div>
+
+      <div class="footer-col footer-contact">
+        <h5>Head Office</h5>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8 6 6 10 6 13a6 6 0 0012 0c0-3-2-7-6-11z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span>Office No. 27, Block No. 2, Unit No. 15, Global Ascent Business Center, Musaffah Industrial Area, Abu Dhabi, UAE</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span>+971 2 447 4928</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18v12H3V6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span>sales@globaltechnology.co</span></li>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Global Technology Oil Field and Gas Trading LLC. All rights reserved.</span>
+      <span>Offices in Abu Dhabi · Dubai · Al Khobar · Houston</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Navbar scroll-shrink
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 30);
+  }, { passive: true });
+
+  // Mobile menu toggle
+  const navToggle = document.getElementById('navToggle');
+  const mobilePanel = document.getElementById('mobilePanel');
+  navToggle.addEventListener('click', () => {
+    const isOpen = navToggle.classList.toggle('open');
+    mobilePanel.classList.toggle('open', isOpen);
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  // Mobile dropdown toggle
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Auto-detect real images: once a correctly-named file exists in resources/images/,
+  // this cleanly swaps out the dashed-border placeholder + label for the real photo/logo.
+  // Nothing to configure — this runs automatically for every placeholder on the page.
+  document.querySelectorAll('.img-placeholder').forEach(el => {
+    const bg = el.style.backgroundImage;
+    const match = bg && bg.match(/url\(["']?(.*?)["']?\)/);
+    if (!match) return;
+    const url = match[1];
+    const testImg = new Image();
+    testImg.onload = () => el.classList.add('img-loaded');
+    testImg.onerror = () => el.classList.remove('img-loaded');
+    testImg.src = url;
+  });
+
+  // Respect reduced-motion preference for the hero background video
+  const heroVideo = document.querySelector('.hero-video');
+  if (heroVideo && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    heroVideo.pause();
+    heroVideo.removeAttribute('autoplay');
+  }
+</script>
+
+</body>
+</html>
